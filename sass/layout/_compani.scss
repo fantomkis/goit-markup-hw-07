@@ -35,14 +35,15 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: background-color, var(--transition);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .icon-compani {
   fill: currentColor;
 }
 
-.compani-link:hover,
-.compani-link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}

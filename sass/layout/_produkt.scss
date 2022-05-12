@@ -1,10 +1,10 @@
 
 /* особиности продукт */
-.foto-produkt {
+.produkt {
   padding-bottom: 94px;
 }
 
-.about-title {
+.produkt__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -15,23 +15,36 @@
   margin: 0 auto;
 }
 
-.they {
-  display: flex;
-  align-items: center;
-}
-
-.foto {
+.produkt__list {
   display: flex;
   align-items: center;
   margin-top: 50px;
 }
 
-.foto-list {
-  margin-right: 30px;
+.produkt__item {
+ 
   position: relative;
 }
 
-.foto-list-text {
+.produkt__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+// .foto-list:last-child {
+//   margin: 0;
+// }
+
+
+// .they {
+//   display: flex;
+//   align-items: center;
+// }
+
+
+
+
+
+.produkt__laibl {
   position: absolute;
   text-align: center;
   font-weight: 700;
@@ -46,8 +59,4 @@
   color: var(--primery-white-color);
   background: rgba(47, 48, 58, 0.8);
   padding: 24px 0;
-}
-
-.foto-list:last-child {
-  margin: 0;
 }
